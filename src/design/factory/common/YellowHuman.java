@@ -1,4 +1,4 @@
-package design.factory;
+package design.factory.common;
 
 /**
  * 类描述:

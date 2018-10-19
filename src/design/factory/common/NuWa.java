@@ -8,7 +8,19 @@ package design.factory.common;
 public class NuWa {
 
     public static void main(String[] args) {
-        System.out.println("################################################################################################");
+        String phone = "13212345678";
+        String newPhone = phone.replaceAll("(\\d{3})\\d{4}(\\d{4})","$1****$2");
+        System.out.println(newPhone);
+
+        String O  = "";
+        for(int i=0;i<10;i++){
+            O+=i;
+        }
+        System.out.println(O);
+
+        NuWa nuWa = new NuWa();
+        nuWa.s();
+       /* System.out.println("################################################################################################");
         AbstractHumanFactory abstractHumanFactory = new HumanFactory();
         System.out.println("白人");
         Human whiteHuman = abstractHumanFactory.createHuman(WhiteHuman.class);
@@ -35,7 +47,10 @@ public class NuWa {
         Human yelloHuman1 =  HumanFactory.staticCreateHuman(YellowHuman.class);
         yelloHuman1.getColor();
         yelloHuman1.talk();
+*/
 
-
+    }
+    public void s(){
+        System.out.println(this);
     }
 }
